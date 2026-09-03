@@ -1,0 +1,340 @@
+module:
+  id: 17
+  name: Glossary and Knowledge Graph
+  description: >
+    Canonical definitions, terminology,
+    relationships and ontology used by
+    the AI Trading Knowledge Base.
+# CORE ENTITY TYPES
+entities:
+  market:
+    description:
+      Financial environment where assets are traded.
+  trend:
+    description:
+      Direction of market movement.
+  structure:
+    description:
+      Arrangement of swing highs and lows.
+  volume:
+    description:
+      Trading participation.
+  volatility:
+    description:
+      Magnitude of price movement.
+  liquidity:
+    description:
+      Availability of executable orders.
+# TREND TERMS
+trend:
+  Bullish:
+    Price generally moving upward.
+  Bearish:
+    Price generally moving downward.
+  Sideways:
+    No dominant directional trend.
+  Primary Trend:
+    Long-term dominant trend.
+  Secondary Trend:
+    Counter-trend correction.
+  Minor Trend:
+    Short-term market fluctuations.
+# MARKET STRUCTURE
+structure:
+  HH:
+    Higher High
+  HL:
+    Higher Low
+  LH:
+    Lower High
+  LL:
+    Lower Low
+  BOS:
+    Break of Structure
+  CHOCH:
+    Change of Character
+  Swing High:
+    Local maximum.
+  Swing Low:
+    Local minimum.
+# WYCKOFF TERMS
+wyckoff:
+  Composite Man:
+    Institutional market participant model.
+  Accumulation:
+    Institutions quietly buying.
+  Markup:
+    Bullish expansion.
+  Distribution:
+    Institutions gradually selling.
+  Markdown:
+    Bearish expansion.
+  Spring:
+    False bearish breakdown.
+  SOS:
+    Sign of Strength.
+  LPS:
+    Last Point of Support.
+  UT:
+    Upthrust.
+  UTAD:
+    Upthrust After Distribution.
+  SOW:
+    Sign of Weakness.
+  LPSY:
+    Last Point of Supply.
+# CANDLESTICKS
+candles:
+  Doji:
+    Market indecision.
+  Hammer:
+    Bullish rejection.
+  Hanging Man:
+    Potential bearish warning.
+  Inverted Hammer:
+    Possible bullish reversal.
+  Shooting Star:
+    Bearish rejection.
+  Bullish Engulfing:
+    Strong buying pressure.
+  Bearish Engulfing:
+    Strong selling pressure.
+  Morning Star:
+    Bullish reversal.
+  Evening Star:
+    Bearish reversal.
+# CHART PATTERNS
+patterns:
+  Double Top:
+    Bearish reversal.
+  Double Bottom:
+    Bullish reversal.
+  Head and Shoulders:
+    Bearish reversal.
+  Inverse Head and Shoulders:
+    Bullish reversal.
+  Triangle:
+    Compression pattern.
+  Flag:
+    Continuation pattern.
+  Pennant:
+    Continuation pattern.
+  Rectangle:
+    Trading range.
+  Wedge:
+    Converging trend structure.
+# SUPPORT & RESISTANCE
+levels:
+  Support:
+    Buying zone.
+  Resistance:
+    Selling zone.
+  Supply Zone:
+    Institutional selling area.
+  Demand Zone:
+    Institutional buying area.
+  Retest:
+    Price revisits breakout level.
+# VOLUME TERMS
+volume_terms:
+  Buying Climax:
+    Extremely high buying activity.
+  Selling Climax:
+    Extremely high selling activity.
+  Absorption:
+    Large orders absorbed with little movement.
+  Divergence:
+    Price and volume disagree.
+# INDICATORS
+indicators:
+  SMA:
+    Simple Moving Average.
+  EMA:
+    Exponential Moving Average.
+  RSI:
+    Relative Strength Index.
+  MACD:
+    Moving Average Convergence Divergence.
+  ATR:
+    Average True Range.
+  ADX:
+    Average Directional Index.
+  OBV:
+    On Balance Volume.
+  Bollinger Bands:
+    Volatility envelope.
+  Stochastic:
+    Momentum oscillator.
+# RISK MANAGEMENT
+risk:
+  Stop Loss:
+    Maximum predefined loss.
+  Take Profit:
+    Planned exit target.
+  Position Size:
+    Number of units traded.
+  Risk Reward:
+    Expected reward divided by expected risk.
+  Drawdown:
+    Peak-to-trough decline.
+  Expectancy:
+    Average long-term outcome.
+# PSYCHOLOGY
+psychology:
+  FOMO:
+    Fear of Missing Out.
+  Revenge Trading:
+    Emotional trading after losses.
+  Discipline:
+    Following predefined rules.
+  Greed:
+    Excessive desire for gains.
+  Fear:
+    Excessive avoidance of losses.
+  Confirmation Bias:
+    Seeking supporting evidence only.
+# RELATIONSHIPS
+relationships:
+  Trend:
+    influences:
+      - Structure
+      - Indicators
+      - Trade Direction
+  Structure:
+    determines:
+      - Trend Continuation
+      - Reversal
+      - Entry Zones
+  Wyckoff:
+    explains:
+      - Institutional Behavior
+      - Market Cycle
+      - Supply Demand
+  Volume:
+    confirms:
+      - Trend
+      - Breakout
+      - Reversal
+  Candlesticks:
+    describe:
+      - Short-term Psychology
+  Indicators:
+    support:
+      - Confirmation
+  Risk Management:
+    controls:
+      - Capital
+      - Position Size
+      - Long-term Survival
+# REASONING HIERARCHY
+reasoning_order:
+  1:
+    Higher Timeframe
+  2:
+    Trend
+  3:
+    Market Structure
+  4:
+    Wyckoff
+  5:
+    Supply Demand
+  6:
+    Support Resistance
+  7:
+    Liquidity
+  8:
+    Volume
+  9:
+    Candlesticks
+  10:
+    Chart Patterns
+  11:
+    Indicators
+  12:
+    Risk
+  13:
+    Trading Psychology
+  14:
+    Final Decision
+# CROSS-REFERENCE MAP
+cross_reference:
+  Trend:
+    references:
+      - Dow Theory
+      - Market Structure
+      - Moving Averages
+  Accumulation:
+    references:
+      - Composite Man
+      - Volume
+      - Spring
+      - Demand Zone
+  Distribution:
+    references:
+      - UTAD
+      - Supply Zone
+      - Buying Climax
+  Breakout:
+    references:
+      - Volume
+      - Support
+      - Resistance
+      - Retest
+  BOS:
+    references:
+      - Trend
+      - Swing High
+      - Swing Low
+  RSI:
+    references:
+      - Momentum
+      - Divergence
+# AI RETRIEVAL TAGS
+tags:
+  trend:
+    [bullish, bearish, sideways]
+  structure:
+    [HH, HL, LH, LL, BOS, CHOCH]
+  wyckoff:
+    [accumulation, markup, distribution, markdown]
+  volume:
+    [confirmation, absorption, climax]
+  patterns:
+    [reversal, continuation, breakout]
+  indicators:
+    [EMA, RSI, MACD, ADX, ATR]
+  risk:
+    [stop_loss, rr_ratio, expectancy]
+# AI RESPONSE TEMPLATE
+response_schema:
+  trend:
+  structure:
+  wyckoff_phase:
+  support:
+  resistance:
+  volume:
+  pattern:
+  indicators:
+  risk:
+  psychology:
+  confidence:
+  explanation:
+  final_decision:
+# GOLDEN KNOWLEDGE RULES
+golden_rules:
+  - Context overrides isolated signals.
+  - Trend overrides indicators.
+  - Structure overrides candlestick patterns.
+  - Volume validates price movement.
+  - Confluence increases confidence.
+  - Risk management is mandatory.
+  - Every decision must be explainable.
+  - Preserve capital before seeking profit.
+# FINAL SUMMARY
+summary:
+  objective:
+    Provide a unified ontology that allows
+    the AI to retrieve concepts, resolve
+    terminology, build relationships and
+    produce consistent, explainable trading
+    decisions across the entire knowledge base.

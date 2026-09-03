@@ -1,0 +1,32 @@
+module: 04_Market_Makers
+definition: Large financial institutions that provide liquidity, facilitate trading, and influence short-term price via order execution, inventory management, and liquidity-seeking behavior.
+objective: Understand institutional behavior rather than predict individual market maker actions.
+participants: [Institutional Banks, Investment Funds, Hedge Funds, Prop Trading Firms, Liquidity Providers, High Frequency Traders, Central Banks]
+responsibilities: [Provide Liquidity, Reduce Bid-Ask Spread, Match Orders, Maintain Order Flow, Absorb Large Orders]
+core_concepts:
+  liquidity_pools: Orders accumulate at Equal Highs/Lows, Previous Swing Highs/Lows, Round Numbers, Major S/R levels.
+  order_flow: Institutions execute large positions gradually to minimise market impact.
+  inventory: Large participants continuously balance long and short inventory.
+typical_behaviors:
+  stop_hunt: Price temporarily pierces obvious S/R to access clustered liquidity, then reverses.
+  liquidity_sweep: Brief move beyond liquidity pool followed by rapid reversal.
+  false_breakout: Breakout lacking institutional participation.
+  accumulation: Quiet buying before markup phase.
+  distribution: Quiet selling before markdown phase.
+institutional_footprints: [High Volume, Low-Spread + High Volume, Repeated Level Tests, Absorption, Strong Impulse Moves]
+market_maker_cycle: Accumulation → Markup → Distribution → Markdown
+relationships:
+  wyckoff: Composite Man = aggregated institutional behavior.
+  volume: Confirms institutional participation.
+  market_structure: Reveals institutional intent.
+  liquidity: Primary source of executable orders.
+decision_rules:
+  - Follow institutional footprints, not retail sentiment.
+  - Never assume every breakout is genuine.
+  - Liquidity sweeps require confirmation before acting.
+  - High volume with little movement often indicates absorption.
+common_mistakes:
+  - Believing market makers manipulate every move.
+  - Trading every stop hunt without confirmation.
+  - Ignoring higher timeframe context.
+related_modules: [Wyckoff, Volume_Analysis, Support_Resistance, Market_Basics]

@@ -1,0 +1,320 @@
+module:
+  id: 06
+  name: Chart Patterns
+  description: >
+    Chart patterns are recurring market structures created
+    by repeated human psychology, institutional execution,
+    liquidity interaction and supply-demand imbalance.
+# OVERVIEW
+chart_patterns:
+  objective:
+    Identify continuation, reversal,
+    accumulation and distribution structures.
+  assumptions:
+    - Patterns represent psychology.
+    - Patterns never guarantee outcomes.
+    - Trend has higher priority than pattern.
+    - Volume validates patterns.
+    - Market structure validates patterns.
+# CLASSIFICATION
+classification:
+  continuation:
+    - Bull Flag
+    - Bear Flag
+    - Pennant
+    - Rectangle
+    - Ascending Triangle
+    - Descending Triangle
+  reversal:
+    - Head and Shoulders
+    - Inverse Head and Shoulders
+    - Double Top
+    - Double Bottom
+    - Triple Top
+    - Triple Bottom
+    - Rising Wedge
+    - Falling Wedge
+  neutral:
+    - Symmetrical Triangle
+    - Broadening Formation
+# DOUBLE TOP
+double_top:
+  category:
+    Bearish Reversal
+  psychology:
+    Buyers fail to create
+    a new higher high.
+    Demand weakens.
+    Supply increases.
+  confirmation:
+    Neckline break.
+  volume:
+    Lower volume
+    on second peak.
+  invalidation:
+    Close above second high.
+# DOUBLE BOTTOM
+double_bottom:
+  category:
+    Bullish Reversal
+  psychology:
+    Sellers fail to create
+    lower lows.
+    Demand absorbs supply.
+  confirmation:
+    Neckline breakout.
+  invalidation:
+    Break below second low.
+# HEAD & SHOULDERS
+head_shoulders:
+  category:
+    Bearish Reversal
+  psychology:
+    Demand gradually weakens.
+    Institutions distribute.
+  structure:
+    Left Shoulder
+    Head
+    Right Shoulder
+    Neckline
+  confirmation:
+    Neckline break
+    with volume.
+  invalidation:
+    Break above head.
+# INVERSE HEAD & SHOULDERS
+inverse_head_shoulders:
+  category:
+    Bullish Reversal
+  psychology:
+    Supply exhausted.
+    Institutions accumulate.
+  confirmation:
+    Neckline breakout.
+# ASCENDING TRIANGLE
+ascending_triangle:
+  category:
+    Bullish Continuation
+  psychology:
+    Buyers become increasingly aggressive.
+    Resistance repeatedly tested.
+    Supply decreases.
+  confirmation:
+    Breakout above resistance.
+# DESCENDING TRIANGLE
+descending_triangle:
+  category:
+    Bearish Continuation
+  psychology:
+    Sellers become aggressive.
+    Support weakens.
+  confirmation:
+    Breakdown below support.
+# SYMMETRICAL TRIANGLE
+symmetrical_triangle:
+  category:
+    Neutral
+  psychology:
+    Temporary equilibrium.
+    Volatility contracts.
+  expectation:
+    Wait for breakout.
+# FLAG
+flag:
+  category:
+    Continuation
+  psychology:
+    Profit taking.
+    Trend pauses.
+    Institutions continue building positions.
+  confirmation:
+    Breakout
+    in trend direction.
+# PENNANT
+pennant:
+  category:
+    Continuation
+  psychology:
+    Market compression
+    after strong impulse.
+  confirmation:
+    Volume expansion
+    on breakout.
+# WEDGES
+rising_wedge:
+  expectation:
+    Bearish
+  psychology:
+    Uptrend weakens.
+    Buying momentum decreases.
+falling_wedge:
+  expectation:
+    Bullish
+  psychology:
+    Selling pressure weakens.
+    Demand increases.
+# RECTANGLE
+rectangle:
+  meaning:
+    Trading Range.
+  possibilities:
+    Accumulation
+    Distribution
+  confirmation:
+    Direction determined
+    after breakout.
+# GAPS
+gaps:
+  common:
+    Low significance.
+  breakaway:
+    Begins trend.
+  runaway:
+    Confirms trend.
+  exhaustion:
+    Ends trend.
+# BREAKOUT
+breakout:
+  valid_conditions:
+    - Close outside pattern.
+    - High volume.
+    - Follow-through.
+    - Trend alignment.
+  weak_conditions:
+    - Low volume.
+    - Immediate rejection.
+# FALSE BREAKOUT
+false_breakout:
+  characteristics:
+    Breaks pattern.
+    Returns inside.
+    Traps traders.
+  interpretation:
+    Liquidity event.
+# PATTERN RELIABILITY
+reliability:
+  strongest:
+    Pattern
+      +
+    Trend
+      +
+    Volume
+      +
+    Support Resistance
+      +
+    Market Structure
+      +
+    Institutional Confirmation
+  weakest:
+    Pattern Alone
+# VOLUME INTERPRETATION
+volume:
+  breakout:
+    High Volume
+      →
+    Strong Confirmation
+  pullback:
+    Lower Volume
+      →
+    Healthy Trend
+  reversal:
+    Increasing Volume
+      →
+    Higher Probability
+# WYCKOFF CONNECTIONS
+wyckoff:
+  rectangle:
+    Trading Range
+  double_bottom:
+    Selling Climax
+    Spring
+  double_top:
+    Distribution
+  head_shoulders:
+    Distribution
+  inverse_head_shoulders:
+    Accumulation
+# DOW THEORY CONNECTION
+dow:
+  continuation_patterns:
+    Usually occur
+    during primary trend.
+  reversal_patterns:
+    Require confirmation
+    before trend changes.
+# AI DECISION RULES
+decision_rules:
+  - Never trade pattern alone.
+  - Volume must confirm.
+  - Trend has priority.
+  - Breakout requires follow-through.
+  - False breakout indicates liquidity hunt.
+  - Pattern size influences target projection.
+# AI INFERENCE
+inference:
+  - if:
+      Double Bottom
+      High Volume
+      Support
+      Higher Low
+    then:
+      Probability:
+        Strong Bullish
+  - if:
+      Head and Shoulders
+      Neckline Break
+      Rising Volume
+    then:
+      Probability:
+        Strong Bearish
+  - if:
+      Rectangle
+      Failed Breakdown
+      Strong Recovery
+    then:
+      Likely:
+        Accumulation
+  - if:
+      Rectangle
+      Failed Breakout
+      Selling Pressure
+    then:
+      Likely:
+        Distribution
+# KNOWLEDGE GRAPH
+graph:
+  Trend
+      ↓
+  Market Structure
+      ↓
+  Pattern Formation
+      ↓
+  Volume Confirmation
+      ↓
+  Breakout
+      ↓
+  Follow Through
+      ↓
+  Entry
+      ↓
+  Stop
+      ↓
+  Target
+# COMMON ERRORS
+mistakes:
+  - Trading before breakout.
+  - Ignoring trend.
+  - Ignoring volume.
+  - Ignoring support/resistance.
+  - Assuming every rectangle
+    is accumulation.
+  - Treating every breakout
+    as genuine.
+# SUMMARY
+summary:
+  principle:
+    Chart patterns represent recurring
+    institutional behavior and crowd psychology.
+  objective:
+    Trade confirmed market structure,
+    not visual shapes alone.

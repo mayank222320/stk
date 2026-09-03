@@ -1,0 +1,335 @@
+module:
+  id: 07
+  name: Support Resistance and Market Structure
+  description: >
+    Defines how price builds structure,
+    identifies important market levels,
+    and transitions between trends through
+    institutional buying and selling.
+# MARKET STRUCTURE
+market_structure:
+  definition: >
+    The arrangement of swing highs,
+    swing lows, trends and trading ranges
+    that define the current market condition.
+  objectives:
+    - Determine Trend
+    - Locate Important Levels
+    - Detect Reversals
+    - Detect Continuation
+    - Identify Institutional Activity
+# SWINGS
+swings:
+  swing_high:
+    definition:
+      A local maximum surrounded by lower highs.
+  swing_low:
+    definition:
+      A local minimum surrounded by higher lows.
+importance:
+  higher_timeframe:
+    Highest Priority
+  lower_timeframe:
+    Lower Priority
+# MARKET CONDITIONS
+conditions:
+  bullish:
+    structure:
+      HH
+      HL
+  bearish:
+    structure:
+      LH
+      LL
+  ranging:
+    structure:
+      Equal Highs
+      Equal Lows
+      Trading Range
+# SUPPORT
+support:
+  definition:
+    Area where buying pressure
+    repeatedly exceeds selling pressure.
+  characteristics:
+    - Price rejection
+    - Demand increases
+    - Volume often increases
+    - Lower wick formation
+institution_view:
+  Area where institutions
+  frequently accumulate inventory.
+# RESISTANCE
+resistance:
+  definition:
+    Area where selling pressure
+    exceeds buying pressure.
+  characteristics:
+    - Upper rejection
+    - Supply increases
+    - Momentum weakens
+institution_view:
+  Area where institutions
+  frequently distribute inventory.
+# SUPPORT TYPES
+support_types:
+  horizontal
+  trendline
+  moving_average
+  fibonacci
+  previous_high
+  previous_low
+  volume_node
+# RESISTANCE TYPES
+resistance_types:
+  horizontal
+  trendline
+  moving_average
+  fibonacci
+  previous_high
+  previous_low
+  volume_node
+# ROLE REVERSAL
+role_reversal:
+  principle:
+    Broken Resistance
+        →
+    New Support
+    Broken Support
+        →
+    New Resistance
+importance:
+  Very High
+# TRENDLINES
+trendlines:
+  bullish:
+    Connect Higher Lows
+  bearish:
+    Connect Lower Highs
+usage:
+  Dynamic Support
+  Dynamic Resistance
+limitations:
+  Never use trendline
+  without market structure.
+# BREAK OF STRUCTURE
+BOS:
+  full_name:
+    Break of Structure
+  bullish:
+    Higher High breaks previous High.
+  bearish:
+    Lower Low breaks previous Low.
+meaning:
+  Existing trend continues.
+importance:
+  Very High
+# CHANGE OF CHARACTER
+CHOCH:
+  definition:
+    Early indication that
+    trend direction may change.
+bullish:
+  Lower High
+      →
+  Higher High
+bearish:
+  Higher Low
+      →
+  Lower Low
+importance:
+  Early Warning
+# LIQUIDITY
+liquidity:
+  definition:
+    Areas where many stop-loss
+    and pending orders exist.
+common_locations:
+  Equal Highs
+  Equal Lows
+  Trendline Breaks
+  Previous Highs
+  Previous Lows
+institutional_use:
+  Institutions seek liquidity
+  before initiating large moves.
+# LIQUIDITY SWEEP
+liquidity_sweep:
+  description:
+    Temporary movement beyond
+    obvious support/resistance
+    to trigger stops before reversal.
+purposes:
+  - Trigger Stop Losses
+  - Fill Institutional Orders
+  - Trap Traders
+confirmation:
+  Immediate Recovery
+# ORDER ABSORPTION
+absorption:
+  definition:
+    Large participants absorb
+    aggressive buying or selling
+    without allowing price
+    to move significantly.
+signals:
+  High Volume
+  Small Price Movement
+related:
+  Wyckoff Effort vs Result
+# SUPPLY ZONES
+supply_zone:
+  definition:
+    Region where institutional
+    selling dominates.
+characteristics:
+  - Strong Rejection
+  - High Volume
+  - Bearish Impulse
+# DEMAND ZONES
+demand_zone:
+  definition:
+    Region where institutional
+    buying dominates.
+characteristics:
+  - Strong Rally
+  - High Volume
+  - Bullish Impulse
+# RETEST
+retest:
+  definition:
+    Price revisits breakout level
+    before continuation.
+bullish:
+  Resistance
+      →
+  Support
+bearish:
+  Support
+      →
+  Resistance
+importance:
+  Confirmation
+# CONFLUENCE
+confluence:
+  definition:
+    Multiple independent factors
+    supporting the same trade.
+examples:
+  Trend
+      +
+  Support
+      +
+  Volume
+      +
+  BOS
+      +
+  Demand Zone
+      +
+  Bullish Candle
+higher_confluence:
+  Higher Probability
+# STRUCTURE HIERARCHY
+priority:
+  1:
+    Higher Timeframe Structure
+  2:
+    Trend
+  3:
+    BOS
+  4:
+    CHOCH
+  5:
+    Supply Demand
+  6:
+    Support Resistance
+  7:
+    Candlestick
+# AI DECISION RULES
+decision_rules:
+  - Never trade against higher timeframe structure.
+  - BOS confirms continuation.
+  - CHOCH suggests possible reversal.
+  - Liquidity sweep alone is not an entry.
+  - Retest increases probability.
+  - Strong confluence has higher reliability.
+# AI INFERENCE RULES
+inference:
+  - if:
+      BOS
+      High Volume
+      Successful Retest
+    then:
+      Trend:
+        Strong Continuation
+      Confidence:
+        Very High
+  - if:
+      CHOCH
+      Liquidity Sweep
+      Demand Zone
+      Bullish Engulfing
+    then:
+      Probability:
+        Bullish Reversal
+  - if:
+      Resistance
+      Shooting Star
+      High Volume
+      Lower High
+    then:
+      Probability:
+        Distribution
+  - if:
+      Support
+      Hammer
+      High Volume
+      Higher Low
+    then:
+      Probability:
+        Accumulation
+# KNOWLEDGE GRAPH
+graph:
+  Higher Timeframe
+      ↓
+  Market Structure
+      ↓
+  Trend
+      ↓
+  BOS / CHOCH
+      ↓
+  Support Resistance
+      ↓
+  Supply Demand
+      ↓
+  Liquidity
+      ↓
+  Volume
+      ↓
+  Candlestick
+      ↓
+  Confirmation
+      ↓
+  Entry
+      ↓
+  Risk
+      ↓
+  Exit
+# COMMON ERRORS
+mistakes:
+  - Trading every BOS.
+  - Ignoring higher timeframe.
+  - Assuming every breakout is genuine.
+  - Ignoring liquidity.
+  - Ignoring volume.
+  - Using support/resistance as exact price instead of zones.
+  - Ignoring confluence.
+# SUMMARY
+summary:
+  principle:
+    Market structure is the framework
+    that organizes every other technical concept.
+  objective:
+    Understand how institutions create,
+    defend and break important market levels
+    before making trading decisions.

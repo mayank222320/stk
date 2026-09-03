@@ -1,0 +1,40 @@
+module: 08_Trend_Analysis
+definition: Identifying the dominant direction of price movement to trade with the prevailing market force.
+objective: Determine market direction, strength, and probability before making trading decisions.
+trend_types:
+  primary:   {description: Long-term dominant direction, duration: Months to Years, priority: Highest}
+  secondary: {description: Temporary correction against primary, duration: Weeks to Months}
+  minor:     {description: Short-term fluctuations inside larger trends, duration: Minutes to Days}
+directions:
+  bullish:   [Higher Highs, Higher Lows, Buying Pressure Dominates]
+  bearish:   [Lower Highs, Lower Lows, Selling Pressure Dominates]
+  sideways:  [Range Bound, Equal Highs, Equal Lows, Low Directional Bias]
+strength:
+  strong: [Consistent Higher Highs, Strong Volume, Wide Price Expansion, Healthy Pullbacks]
+  weak:   [Frequent Reversals, Low Volume, Mixed Structure]
+identification:
+  price_action:    [HH-HL for uptrend, LH-LL for downtrend]
+  moving_averages: {price_above_ema: Bullish, price_below_ema: Bearish}
+  adx:             {above_25: Strong Trend, below_20: Weak Trend}
+  volume:          Rising volume strengthens trend.
+phases: [Beginning, Expansion, Maturity, Exhaustion]
+pullbacks:
+  healthy: [Low Volume, Respects S/R, Structure Maintained]
+  warning: [Breaks Market Structure, High Selling Volume, Loss of Momentum]
+multi_timeframe:
+  hierarchy: [Monthly, Weekly, Daily, 4H, 1H, 15M, 5M]
+  rule: Higher timeframe determines bias. Lower timeframe determines execution.
+decision_rules:
+  - Always trade with the primary trend.
+  - Wait for pullbacks instead of chasing price.
+  - Confirm trend with both structure AND volume.
+  - Trend strength > indicator signals.
+  - Sideways markets require different strategies.
+common_mistakes:
+  - Trading against the higher timeframe trend.
+  - Mistaking every pullback for a reversal.
+  - Chasing extended moves.
+  - Ignoring volume confirmation.
+  - Using indicators without market structure.
+summary: Price structure determines trend, volume validates it, higher timeframes take precedence.
+related_modules: [Dow_Theory, Volume_Analysis, Support_Resistance, Indicators, Risk_Management]

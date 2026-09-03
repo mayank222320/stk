@@ -1,0 +1,271 @@
+module:
+  id: 10
+  name: Technical Indicators
+  description: >
+    Technical indicators are mathematical transformations of
+    price, volume or volatility. They are secondary tools that
+    support decision-making but never replace price action or
+    market structure.
+# PRINCIPLES
+principles:
+  - Indicators derive from price.
+  - Indicators lag price.
+  - Price action has highest priority.
+  - Indicators confirm analysis.
+  - Never trade solely using indicators.
+priority:
+  1:
+    Market Structure
+  2:
+    Trend
+  3:
+    Price Action
+  4:
+    Volume
+  5:
+    Indicators
+# INDICATOR CLASSIFICATION
+categories:
+  trend:
+    - SMA
+    - EMA
+    - MACD
+    - ADX
+  momentum:
+    - RSI
+    - Stochastic
+    - ROC
+    - Momentum
+  volatility:
+    - ATR
+    - Bollinger Bands
+  volume:
+    - OBV
+    - Volume Moving Average
+# MOVING AVERAGE
+moving_average:
+  definition:
+    Average price over a fixed period.
+  purpose:
+    Identify trend direction.
+  types:
+    SMA:
+      description:
+        Equal weight to every observation.
+    EMA:
+      description:
+        Higher weight to recent prices.
+  bullish:
+    Price Above MA
+  bearish:
+    Price Below MA
+  strongest_signal:
+    Trend Alignment
+  weakness:
+    Lagging
+# MOVING AVERAGE CROSSOVER
+ma_crossover:
+  golden_cross:
+    signal: Short MA crosses above Long MA.
+    interpretation: Long-term Bullish
+  death_cross:
+    signal: Short MA crosses below Long MA.
+    interpretation: Long-term Bearish
+# RSI
+rsi:
+  full_name:
+    Relative Strength Index
+  range:
+    0-100
+  purpose:
+    Measure momentum.
+  overbought:
+    Above 70
+  oversold:
+    Below 30
+  bullish:
+    RSI rising
+  bearish:
+    RSI falling
+  divergence:
+    Strong reversal warning.
+limitations:
+  RSI can remain overbought
+  during strong trends.
+# MACD
+macd:
+  purpose:
+    Measure trend momentum.
+  components:
+    MACD Line
+    Signal Line
+    Histogram
+bullish:
+  MACD crosses above Signal.
+bearish:
+  MACD crosses below Signal.
+strongest:
+  Trend confirmation.
+# STOCHASTIC
+stochastic:
+  range:
+    0-100
+purpose:
+  Measure closing strength.
+overbought:
+  Above 80
+oversold:
+  Below 20
+best_use:
+  Sideways markets.
+# ADX
+adx:
+  purpose:
+    Measure trend strength.
+not_direction:
+  True
+values:
+  Below 20:
+    Weak Trend
+  20-40:
+    Moderate Trend
+  Above 40:
+    Strong Trend
+# ATR
+atr:
+  full_name:
+    Average True Range
+purpose:
+  Measure volatility.
+uses:
+  Position sizing
+  Stop placement
+  Volatility comparison
+# BOLLINGER BANDS
+bollinger:
+  components:
+    Upper Band
+    Middle Band
+    Lower Band
+purpose:
+  Measure volatility.
+squeeze:
+  Low Volatility
+expansion:
+  High Volatility
+touch_upper:
+  Not automatically bearish.
+touch_lower:
+  Not automatically bullish.
+# OBV
+obv:
+  full_name:
+    On Balance Volume
+purpose:
+  Measure cumulative buying
+  and selling pressure.
+bullish:
+  OBV rising.
+bearish:
+  OBV falling.
+# DIVERGENCE
+divergence:
+  bullish:
+    Price Lower Low
+    Indicator Higher Low
+  interpretation:
+    Momentum improving.
+bearish:
+  Price Higher High
+  Indicator Lower High
+interpretation:
+  Momentum weakening.
+# TREND FILTER
+trend_filter:
+  bullish:
+    Price
+      >
+    200 EMA
+bearish:
+    Price
+      <
+    200 EMA
+# MULTIPLE INDICATORS
+combination:
+  objective:
+    Confirmation
+preferred:
+  Structure
+      +
+  Trend
+      +
+  Volume
+      +
+  RSI
+      +
+  MACD
+avoid:
+  Five indicators
+  measuring same thing.
+# DECISION RULES
+decision_rules:
+  - Indicators confirm price.
+  - Trend indicators for trending markets.
+  - Oscillators for ranging markets.
+  - Never buy because RSI is oversold.
+  - Never sell because RSI is overbought.
+  - Indicator confluence increases confidence.
+# AI INFERENCE
+inference:
+  - if:
+      HH
+      HL
+      EMA Alignment
+      Rising MACD
+      Rising Volume
+    then:
+      Trend:
+        Strong Bullish
+      Confidence:
+        Very High
+  - if:
+      RSI Divergence
+      Resistance
+      Shooting Star
+    then:
+      Probability:
+        Bearish Reversal
+  - if:
+      Bollinger Squeeze
+      High Volume Breakout
+    then:
+      Expect:
+        Volatility Expansion
+# INDICATOR PRIORITY
+priority_order:
+  Market Structure
+      ↓
+  Trend
+      ↓
+  Volume
+      ↓
+  Indicator
+      ↓
+  Entry
+# COMMON ERRORS
+mistakes:
+  - Trading indicators without price action.
+  - Using many correlated indicators.
+  - Ignoring trend.
+  - Ignoring market structure.
+  - Treating overbought as automatic sell.
+  - Treating oversold as automatic buy.
+# SUMMARY
+summary:
+  principle:
+    Indicators support decisions,
+    they do not create them.
+  objective:
+    Use indicators to strengthen
+    probability after price action,
+    trend and volume agree.

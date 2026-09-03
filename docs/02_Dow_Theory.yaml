@@ -1,0 +1,81 @@
+module: 02_Dow_Theory
+description: Foundation of modern technical analysis. Explains how trends develop, continue, and reverse.
+creator: Charles Dow
+objective: Understand market trends through price behavior.
+philosophy: Markets move in recognizable trends reflecting collective expectations of all participants.
+six_principles:
+  - Markets discount everything.
+  - Markets move in trends.
+  - Trends have three phases.
+  - Indices should confirm each other.
+  - Volume confirms trend.
+  - Trend remains valid until confirmed reversal.
+market_discounts_everything:
+  includes: [News, Earnings, Economy, Politics, Expectations, Psychology, Institutional activity]
+  implication: Study price instead of opinions.
+trend_categories:
+  primary:   {duration: Months to Years, importance: Highest}
+  secondary: {duration: Weeks to Months, purpose: Correction against primary, removes weak participants}
+  minor:     {duration: Days to Weeks, importance: Market noise — largely irrelevant}
+primary_trend:
+  bullish: {structure: HH + HL, psychology: Optimism → Confidence → Expansion}
+  bearish: {structure: LH + LL, psychology: Fear → Liquidation → Capitulation}
+bull_market_phases:
+  accumulation:        {participants: Institutions, characteristics: Low public interest, value buying}
+  public_participation:
+    participants: "Trend followers + Funds + Professionals"
+    characteristics: "Strong trend, growing optimism"
+  excess:             {participants: General Public, characteristics: Euphoria, speculation, high valuation}
+bear_market_phases:
+  distribution: {participants: Institutions, characteristics: Quiet selling}
+  panic:        {participants: Public, characteristics: Fear, heavy selling}
+  despair:      {participants: Remaining holders, characteristics: Capitulation, forced liquidation}
+volume:
+  principle: Volume should support the prevailing trend.
+  bullish: Higher volume on rallies. Lower volume on pullbacks.
+  bearish: Higher volume on declines. Lower volume on rallies.
+  divergence: Signals possible weakening trend.
+confirmation:
+  concept: Independent evidence should agree before assuming a trend is valid.
+  examples: [Multiple indices, Sector confirmation, Volume confirmation, Market breadth]
+trend_reversal:
+  requirements: [Break existing structure, Fail continuation, New opposite structure forms]
+  bullish_sequence: Lower Low ends → Higher Low forms → Higher High confirms
+  bearish_sequence: Higher High ends → Lower High forms → Lower Low confirms
+market_structure:
+  bullish: HH + HL
+  bearish: LH + LL
+  neutral: Trading Range
+support:  Area where buying interest exceeds selling pressure. Characteristics → [Price rejection, Demand increases, Selling weakens]
+resistance: Area where selling pressure exceeds buying demand. Characteristics → [Price rejection, Supply increases, Buying weakens]
+breakout:
+  bullish: [Close above resistance, Increased volume, Follow-through]
+  bearish: [Close below support, Increased volume, Follow-through]
+false_breakout: Break fails → Price returns inside range → Traps traders → Watch for reversal.
+continuation:
+  bullish: Pullback → Support Holds → Volume Contracts → Buyers Return → New HH
+  bearish: Rally → Resistance Holds → Volume Contracts → Sellers Return → New LL
+decision_rules:
+  - Never trade against the primary trend.
+  - Wait for confirmation before assuming reversal.
+  - Ignore minor trends.
+  - Volume should confirm movement.
+  - Trend persists until invalidated.
+inference_rules:
+  - {if: [HH, HL, Rising Volume], then: {trend: Bullish, confidence: High}}
+  - {if: [LH, LL, Rising Selling Volume], then: {trend: Bearish, confidence: High}}
+  - {if: [Breakout, Low Volume], then: {confidence: Weak}}
+  - {if: [Breakout, High Volume, Follow Through], then: {confidence: Very High}}
+wyckoff_equivalents:
+  accumulation: Bull Market Phase 1
+  markup: Public Participation
+  distribution: Bull Market Excess
+  markdown: Bear Market
+common_mistakes:
+  - Trading against primary trend.
+  - Ignoring volume.
+  - Reacting to minor fluctuations.
+  - Predicting reversals without confirmation.
+  - Chasing extended moves.
+summary: Trend is the most important market characteristic. Primary > Secondary > Minor. Trade with dominant trend, wait for confirmed reversals.
+related_modules: [Trend_Analysis, Market_Structure, Support_Resistance, Wyckoff, Volume_Analysis]

@@ -1,0 +1,347 @@
+module:
+  id: 03
+  name: Wyckoff Method
+  description: >
+    Wyckoff Method explains institutional market behavior,
+    accumulation, distribution, market cycles,
+    and professional trading logic through price and volume.
+# OVERVIEW
+wyckoff:
+  creator:
+    Richard D. Wyckoff
+  objective:
+    Understand institutional buying and selling through price,
+    volume and market structure.
+  philosophy:
+    Markets are primarily driven by large professional operators.
+# COMPOSITE MAN
+composite_man:
+  definition: >
+    A conceptual representation of all institutional market
+    participants acting as one intelligent operator.
+  objectives:
+    - Accumulate inventory
+    - Mark prices higher
+    - Distribute inventory
+    - Mark prices lower
+  characteristics:
+    - Patient
+    - Well funded
+    - Liquidity driven
+    - Creates false moves
+    - Uses psychology
+  trading_principle:
+    Trade with Composite Man.
+    Never trade against Composite Man.
+# SMART MONEY
+smart_money:
+  definition:
+    Institutions capable of influencing market movement.
+  participants:
+    - Banks
+    - Hedge Funds
+    - Pension Funds
+    - Mutual Funds
+    - Insurance Companies
+    - Large Proprietary Traders
+  objectives:
+    Buy cheaply.
+    Sell expensively.
+    Avoid moving market while building positions.
+# MARKET CYCLE
+market_cycle:
+  stages:
+    accumulation:
+      next:
+        markup
+    markup:
+      next:
+        distribution
+    distribution:
+      next:
+        markdown
+    markdown:
+      next:
+        accumulation
+# ACCUMULATION
+accumulation:
+  definition:
+    Institutions quietly build positions.
+  characteristics:
+    - Sideways movement
+    - Increasing demand
+    - Selling absorbed
+    - Weak holders exit
+    - Strong holders enter
+  psychology:
+    Public:
+      Fear
+    Institutions:
+      Buying
+# MARKUP
+markup:
+  characteristics:
+    - Higher High
+    - Higher Low
+    - Expanding demand
+    - Public participation
+# DISTRIBUTION
+distribution:
+  characteristics:
+    - Sideways
+    - Supply increasing
+    - Institutions selling
+    - Public buying
+# MARKDOWN
+markdown:
+  characteristics:
+    - Lower High
+    - Lower Low
+    - Fear
+    - Forced liquidation
+# THREE LAWS
+laws:
+  supply_demand:
+    principle:
+      Demand > Supply
+        →
+      Price Rises
+      Supply > Demand
+        →
+      Price Falls
+  cause_effect:
+    principle:
+      Longer accumulation
+        →
+      Larger trend
+      Longer distribution
+        →
+      Larger decline
+  effort_result:
+    effort:
+      Volume
+    result:
+      Price Movement
+    interpretation:
+      High Effort + High Result
+        →
+      Healthy Trend
+      High Effort + Small Result
+        →
+      Absorption
+      Low Effort + Large Result
+        →
+      Low Resistance
+# TRADING RANGE
+trading_range:
+  definition:
+    Area where supply and demand temporarily balance.
+  purposes:
+    - Accumulation
+    - Distribution
+  outcomes:
+    - Breakout
+    - Breakdown
+# PHASES OF ACCUMULATION
+accumulation_phases:
+  phase_a:
+    objective:
+      Stop previous downtrend.
+    events:
+      PS
+      SC
+      AR
+      ST
+  phase_b:
+    objective:
+      Build institutional positions.
+  phase_c:
+    objective:
+      Test remaining supply.
+    events:
+      Spring
+      Shakeout
+  phase_d:
+    objective:
+      Demand dominates.
+    events:
+      SOS
+      LPS
+  phase_e:
+    objective:
+      Begin markup.
+# PHASES OF DISTRIBUTION
+distribution_phases:
+  phase_a:
+    objective:
+      End previous uptrend.
+  phase_b:
+    objective:
+      Institutions distribute.
+  phase_c:
+    objective:
+      Test remaining demand.
+    events:
+      UT
+      UTAD
+  phase_d:
+    objective:
+      Supply dominates.
+    events:
+      SOW
+      LPSY
+  phase_e:
+    objective:
+      Markdown begins.
+# ACCUMULATION EVENTS
+events:
+  PS:
+    Preliminary Support
+  SC:
+    Selling Climax
+  AR:
+    Automatic Rally
+  ST:
+    Secondary Test
+  Spring:
+    False breakdown to remove weak holders.
+  Test:
+    Verify remaining supply.
+  SOS:
+    Sign of Strength.
+  LPS:
+    Last Point of Support.
+  BU:
+    Backup after breakout.
+# DISTRIBUTION EVENTS
+distribution_events:
+  PSY:
+    Preliminary Supply
+  BC:
+    Buying Climax
+  AR:
+    Automatic Reaction
+  ST:
+    Secondary Test
+  UT:
+    Upthrust
+  UTAD:
+    Upthrust After Distribution
+  SOW:
+    Sign of Weakness
+  LPSY:
+    Last Point of Supply
+# STRONG HOLDERS
+strong_holders:
+  characteristics:
+    - Patient
+    - Capitalized
+    - Hold winners
+    - Exit losing trades quickly
+    - Ignore emotional noise
+# WEAK HOLDERS
+weak_holders:
+  characteristics:
+    - Emotional
+    - Under-capitalized
+    - Panic sell
+    - Buy tops
+    - Sell bottoms
+# INSTITUTIONAL FOOTPRINTS
+institutional_signals:
+  bullish:
+    - Spring
+    - Successful Test
+    - SOS
+    - LPS
+    - Increasing Volume
+    - Higher High
+    - Higher Low
+  bearish:
+    - UT
+    - UTAD
+    - SOW
+    - LPSY
+    - Lower High
+    - Lower Low
+# DECISION RULES
+decision_rules:
+  - Never buy inside distribution.
+  - Never short inside accumulation.
+  - Wait for confirmation after Spring.
+  - Wait for confirmation after UTAD.
+  - Volume must confirm breakouts.
+  - Institutions accumulate before rallies.
+  - Institutions distribute before declines.
+# AI INFERENCE RULES
+inference:
+  - if:
+      Spring
+      Low Volume Test
+      SOS
+    then:
+      Bias:
+        Strong Bullish
+      Confidence:
+        Very High
+  - if:
+      UTAD
+      SOW
+      LPSY
+    then:
+      Bias:
+        Strong Bearish
+      Confidence:
+        Very High
+  - if:
+      Trading Range
+      Increasing Volume
+      Failed Breakdown
+    then:
+      Probability:
+        Accumulation
+  - if:
+      Trading Range
+      Failed Breakout
+      Weak Volume
+    then:
+      Probability:
+        Distribution
+# KNOWLEDGE GRAPH
+knowledge_graph:
+  Composite Man
+      ↓
+  Accumulation
+      ↓
+  Spring
+      ↓
+  Test
+      ↓
+  SOS
+      ↓
+  LPS
+      ↓
+  Markup
+      ↓
+  Distribution
+      ↓
+  UTAD
+      ↓
+  SOW
+      ↓
+  Markdown
+# COMMON ERRORS
+mistakes:
+  - Buying before accumulation completes.
+  - Selling before distribution completes.
+  - Ignoring volume.
+  - Ignoring institutional behavior.
+  - Trading against Composite Man.
+  - Assuming every trading range is accumulation.
+# SUMMARY
+summary:
+  core_principle:
+    Institutions move markets.
+  objective:
+    Detect institutional accumulation and distribution
+    before major price movement.

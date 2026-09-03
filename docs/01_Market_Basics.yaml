@@ -1,0 +1,64 @@
+module: 01_Market_Basics
+description: Fundamental mechanics of financial markets — price, supply/demand, liquidity, participants, structure.
+market:
+  definition: A financial auction where buyers/sellers exchange assets, establishing price through supply and demand.
+  objectives: [Price Discovery, Liquidity Transfer, Capital Allocation, Risk Transfer]
+  characteristics: [Dynamic, Probabilistic, Competitive, Information-Driven, Psychology-Driven]
+price:
+  definition: Latest agreed transaction value between buyers and sellers.
+  properties: [Discounts known information, Continuously changes, Reflects supply-demand balance, Represents collective expectations]
+  influenced_by: [Supply, Demand, Liquidity, Institutions, News, Expectations, Fear, Greed]
+supply:
+  definition: Quantity participants are willing to sell.
+  increasing: [Falling prices, Bearish pressure, Distribution]
+  decreasing: [Easier upward movement, Bullish continuation]
+demand:
+  definition: Quantity participants are willing to buy.
+  increasing: [Rising prices, Bullish trend, Institutional accumulation]
+  decreasing: [Weak rallies, Price rejection]
+price_discovery: Buyers compete → Sellers compete → Transactions occur → Equilibrium forms → New info arrives → Equilibrium shifts.
+liquidity:
+  definition: Ease with which assets can be bought or sold.
+  high: [Tight spreads, Efficient execution, Lower slippage]
+  low: [Wider spreads, Higher volatility, Difficult execution]
+participants:
+  institutions: {types: [Banks, Hedge Funds, Mutual Funds, Pension Funds, Insurance, Governments], traits: [Large capital, Position building, Liquidity-seeking, Cannot buy instantly, Leave footprints]}
+  professionals: {traits: [Risk managed, Rule based, Probability focused]}
+  retail: {traits: [Small capital, Emotional, Late entries, Chases price]}
+strong_holders: {description: Positioned correctly and able to hold through adverse moves, traits: [Well capitalized, Emotionally disciplined, Accept losses, Cut losers quickly, Hold winners]}
+weak_holders: {description: Easily influenced by market fluctuations, traits: [Emotional, Under-capitalized, Fear losses, Chase rallies, Panic sell, Ignore risk]}
+psychology:
+  dominant_emotions: [Fear, Greed, Hope, Regret, Confidence, Panic]
+  emotion_cycle: Optimism → Excitement → Euphoria → Anxiety → Denial → Fear → Panic → Capitulation → Depression → Hope → Recovery
+technical_analysis:
+  definition: Study of price, volume and market behavior to estimate future probabilities.
+  assumptions: [Price discounts everything, Markets trend, History repeats]
+  studies: [Price, Volume, Structure, Trend, Momentum, Volatility, Relative Strength]
+  ignores: [Company stories, Opinions, Rumors]
+fundamental_analysis:
+  objective: Estimate intrinsic value.
+  studies: [Revenue, Earnings, Cash Flow, Balance Sheet, Economy, Industry]
+comparison:
+  technical: "What is price doing?"
+  fundamental: "Why should price move?"
+trend:
+  definition: Persistent directional price movement.
+  bullish: HH + HL
+  bearish: LH + LL
+  sideways: Range/Balance
+market_structure:
+  bullish: Higher High + Higher Low
+  bearish: Lower High + Lower Low
+  transition: Break of Structure (BOS) → Change of Character (CHOCH)
+top_down_analysis: Overall Market → Sector → Industry → Stock → Entry Setup
+volume:
+  purpose: Measure participation.
+  confirms: [Breakouts, Trends, Reversals, Accumulation, Distribution]
+core_rules:
+  - Price is primary. Volume confirms.
+  - Trend has priority. Trade probability.
+  - Ignore opinions. Institutions dominate.
+  - Manage risk before profit. Preserve capital.
+  - Wait for confirmation. Never predict certainty.
+knowledge_flow: Supply → Price → Trend → Structure → Opportunity → Confirmation → Execution → Risk → Exit
+related_modules: [Dow_Theory, Wyckoff, Candlestick_Patterns, Chart_Patterns, Indicators, Elliott_Wave, Risk_Management]

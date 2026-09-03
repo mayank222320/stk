@@ -1,0 +1,292 @@
+module:
+  id: 13
+  name: Risk Management
+  description: >
+    Risk management preserves trading capital through controlled
+    position sizing, defined risk, disciplined execution and
+    probability-based decision making.
+# CORE PHILOSOPHY
+philosophy:
+  objective:
+    Survive first.
+    Profit second.
+  principles:
+    - Capital preservation is highest priority.
+    - Every trade has uncertainty.
+    - Losses are unavoidable.
+    - Small losses prevent catastrophic losses.
+    - Risk is controlled before entering a trade.
+# CAPITAL
+capital:
+  definition:
+    Total trading funds available.
+  objectives:
+    Preserve capital.
+    Compound consistently.
+    Avoid large drawdowns.
+# RISK
+risk:
+  definition:
+    Maximum acceptable loss
+    if a trade fails.
+  recommended:
+    conservative:
+      0.5%
+    normal:
+      1%
+    aggressive:
+      2%
+    maximum:
+      Never exceed predefined limit.
+# POSITION SIZING
+position_size:
+  depends_on:
+    - Account Size
+    - Stop Loss Distance
+    - Risk Percentage
+  objective:
+    Equalize risk across trades.
+formula:
+  Position Size
+      =
+  Account Risk
+      /
+  Stop Distance
+# STOP LOSS
+stop_loss:
+  objective:
+    Limit downside risk.
+placement:
+  Never random.
+methods:
+  Structural Low
+  Structural High
+  Swing High
+  Swing Low
+  Volatility
+  ATR
+avoid:
+  Emotional placement.
+  Arbitrary percentage.
+# TAKE PROFIT
+take_profit:
+  methods:
+    Support Resistance
+    Risk Reward
+    Market Structure
+    Trend Exhaustion
+partial_exit:
+  Allowed
+# RISK REWARD
+risk_reward:
+  formula:
+    Expected Reward
+        /
+    Expected Risk
+minimum:
+  2:1
+preferred:
+  3:1
+higher:
+  Better expectancy.
+# EXPECTANCY
+expectancy:
+  definition:
+    Average expected outcome
+    over many trades.
+depends_on:
+  Win Rate
+  Average Win
+  Average Loss
+objective:
+  Positive expectancy.
+# DRAWDOWN
+drawdown:
+  definition:
+    Reduction from account peak.
+levels:
+  below_5:
+    Healthy
+  five_to_ten:
+    Monitor
+  above_ten:
+    Reduce risk
+  above_twenty:
+    Review strategy
+# CAPITAL ALLOCATION
+allocation:
+  avoid:
+    Entire account
+    in one trade.
+  diversify:
+    Across opportunities.
+# CORRELATION
+correlation:
+  definition:
+    Relationship between assets.
+avoid:
+  Multiple highly
+  correlated positions.
+# PYRAMIDING
+pyramiding:
+  allowed:
+    Only winning trades.
+avoid:
+  Adding to losing positions.
+# AVERAGING DOWN
+averaging_down:
+  recommendation:
+    Avoid.
+reason:
+  Increases exposure
+  while probability decreases.
+# LEVERAGE
+leverage:
+  advantages:
+    Increased exposure.
+risks:
+  Increased losses.
+rule:
+  Use conservatively.
+# TRADE MANAGEMENT
+trade_management:
+  after_entry:
+    Monitor structure.
+    Monitor volume.
+    Monitor trend.
+    Adjust only according
+    to predefined rules.
+avoid:
+  Emotional decisions.
+# EXIT CONDITIONS
+exit:
+  stop_hit
+  target_hit
+  trend_reversal
+  invalidation
+  time_based
+# PORTFOLIO RISK
+portfolio:
+  objective:
+    Control total exposure.
+recommendation:
+  Avoid excessive concentration.
+# LOSING STREAK
+losing_streak:
+  actions:
+    Reduce position size.
+    Review trades.
+    Stop emotional trading.
+    Continue only after review.
+# WINNING STREAK
+winning_streak:
+  caution:
+    Avoid overconfidence.
+continue:
+  Follow trading plan.
+# AI RISK FILTER
+risk_filter:
+  reject_trade_if:
+    Risk Reward < 2
+    No Stop Loss
+    Trend Unclear
+    Weak Confirmation
+    High Correlation
+accept_trade_if:
+    Trend Confirmed
+    Structure Confirmed
+    Volume Confirmed
+    Stop Defined
+    Risk Acceptable
+# DECISION MATRIX
+trade_quality:
+  excellent:
+    Trend
+      +
+    Structure
+      +
+    Volume
+      +
+    Confirmation
+      +
+    RR > 3
+  good:
+    RR > 2
+    Confirmation Present
+  poor:
+    Low RR
+    Weak Trend
+    Weak Structure
+# AI INFERENCE
+inference:
+  - if:
+      RR > 3
+      Strong Trend
+      High Volume
+      BOS
+      Demand Zone
+    then:
+      Trade Quality:
+        Excellent
+      Risk:
+        Low
+  - if:
+      RR < 2
+    then:
+      Reject Trade
+  - if:
+      Stop Undefined
+    then:
+      Reject Trade
+  - if:
+      Trend Unknown
+    then:
+      Wait
+# KNOWLEDGE GRAPH
+graph:
+  Capital
+      ↓
+  Risk %
+      ↓
+  Position Size
+      ↓
+  Entry
+      ↓
+  Stop Loss
+      ↓
+  Target
+      ↓
+  Trade Management
+      ↓
+  Exit
+      ↓
+  Performance
+# COMMON ERRORS
+mistakes:
+  - No Stop Loss.
+  - Oversized Position.
+  - Revenge Trading.
+  - Averaging Down.
+  - Ignoring Risk Reward.
+  - Emotional Decisions.
+  - Excessive Leverage.
+  - Moving Stop Loss Away.
+# UNIVERSAL TRADING RULES
+golden_rules:
+  - Preserve capital.
+  - Risk before reward.
+  - Never remove stop loss.
+  - Never risk money you cannot lose.
+  - Accept losses quickly.
+  - Let high-probability trades work.
+  - Consistency beats aggressiveness.
+  - One trade never defines performance.
+# SUMMARY
+summary:
+  principle:
+    Successful trading is primarily
+    a function of risk management,
+    not prediction accuracy.
+  objective:
+    Maximize long-term expectancy
+    while minimizing account risk.

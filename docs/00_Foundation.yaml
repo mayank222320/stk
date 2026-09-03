@@ -1,0 +1,51 @@
+module: 00_Foundation
+name: Unified Trading Knowledge Base
+objective: Consolidate trading knowledge into a single canonical KB optimized for LLM reasoning, RAG, and AI agents.
+design_principles:
+  - Never duplicate knowledge.
+  - Preserve concepts rather than wording.
+  - Normalize terminology. One canonical definition per concept.
+  - Prefer rules over paragraphs. Prefer relationships over isolated facts.
+  - Preserve market logic, cause-effect, institutional perspective, probability over certainty.
+  - Remove stories, author opinions, marketing, repeated explanations, unnecessary examples.
+market_philosophy:
+  market_driven_by: [Supply, Demand, Liquidity, Human Psychology, Institutional Activity]
+  price: Current equilibrium between buyers and sellers.
+  volume: Measures participation and confirms price movement.
+  trend: Persists until sufficient opposing force changes market structure.
+  objective: Understand institutional behavior rather than predict prices.
+core_assumptions:
+  - Price discounts available information.
+  - Markets move in trends. Human behavior repeats.
+  - Institutional capital dominates long-term movement.
+  - Price and volume must always be analyzed together.
+  - Risk management has higher priority than profit maximization.
+market_cycle: Accumulation → Markup → Distribution → Markdown → (repeat)
+market_participants:
+  institutions: {objective: Accumulate/distribute with minimal market impact, traits: [Large capital, Long hold, Liquidity-seeking, Price influence]}
+  professionals: {objective: Trade with institutional flow}
+  retail: {mistakes: [Emotional trading, Chasing price, Ignoring trend, Poor risk management, Overleveraging]}
+knowledge_models:
+  concept_fields: [Definition, Purpose, Characteristics, Market Interpretation, Related Concepts, Trading Implication, Confirmation, Failure Conditions, Confidence]
+  rule_fields: [Condition, Logic, Expected Outcome, Confirmation, Invalidated By]
+  event_fields: [Event, Category, Occurs During, Description, Institutional Objective, Retail Reaction, Confirmation, Failure, Expected Next]
+  decision_fields: [Preconditions, Trigger, Confirmation, Action, Stop, Target]
+confidence_scale: {5: Very High, 4: High, 3: Moderate, 2: Weak, 1: Very Weak}
+trading_principles:
+  - Trade probability, never certainty.
+  - Capital preservation first. Risk before reward.
+  - Trade with trend. Volume confirms price.
+  - Institutions leave footprints. Wait for confirmation.
+  - Respect market structure. Avoid emotional decisions.
+decision_flow: Market → Supply/Demand → Price → Trend → Structure → Setup → Confirmation → Entry → Risk Management → Exit
+canonical_terms:
+  SMC: Smart Money Concepts
+  TA: Technical Analysis
+  OHLC: Open High Low Close
+  HH: Higher High
+  HL: Higher Low
+  LH: Lower High
+  LL: Lower Low
+  BOS: Break of Structure
+  CHOCH: Change of Character
+  TR: Trading Range

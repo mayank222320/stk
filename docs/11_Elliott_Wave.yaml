@@ -1,0 +1,47 @@
+module: 11_Elliott_Wave
+definition: Markets move in recurring wave patterns driven by collective investor psychology. Impulse waves move with the dominant trend; corrective waves move against it.
+objective: Identify current wave position to estimate probable continuation or reversal.
+structure:
+  impulse_5_wave:
+    wave_1: Initial trend movement (early participation)
+    wave_2: Profit-taking correction — never retraces > 100% of Wave 1
+    wave_3: Strongest expansion, highest volume, institutional participation — never the shortest
+    wave_4: Sideways or shallow correction — does NOT overlap Wave 1
+    wave_5: Final expansion, momentum often weakens
+  corrective_3_wave:
+    wave_a: Initial correction
+    wave_b: Temporary recovery
+    wave_c: Final correction
+corrective_patterns:
+  zigzag:           Sharp A-B-C correction.
+  flat:             Sideways correction.
+  triangle:         Contracting consolidation.
+  complex:          Multiple corrective combinations.
+fibonacci:
+  wave_2_retracement:   [50%, 61.8%, 78.6%]
+  wave_3_extension:     [161.8%, 261.8%]
+  wave_4_retracement:   [23.6%, 38.2%]
+  wave_5_target:        Equals Wave 1 or extends to 61.8%.
+volume:
+  wave_3: Highest volume.
+  wave_5: Volume may decrease — creates momentum divergence.
+  corrections: Lower participation.
+fractal_hierarchy: [GrandSuperCycle, SuperCycle, Cycle, Primary, Intermediate, Minor, Minute, Minuette, SubMinuette]
+trading_applications:
+  trend_continuation: Prefer Wave 3 entries.
+  exhaustion_watch:   Monitor Wave 5 divergence for reversal setup.
+  corrections:        Wait for corrective pattern completion before re-entering trend.
+confirmation_required: [Price Action, Market Structure, Volume, Support/Resistance, Momentum Indicators]
+limitations: [Subjective counting, Multiple valid counts possible, Not standalone — always confirm]
+decision_rules:
+  - Never rely solely on wave count.
+  - Confirm with market structure and volume.
+  - Prefer Wave 3 opportunities.
+  - Reduce confidence when multiple wave counts exist.
+common_mistakes:
+  - Forcing wave counts onto price.
+  - Ignoring trend context.
+  - Ignoring volume confirmation.
+  - Assuming every correction is an Elliott pattern.
+summary: Most effective when combined with trend analysis, market structure, volume, and Fibonacci.
+related_modules: [Dow_Theory, Trend_Analysis, Support_Resistance, Volume_Analysis, Indicators, Trading_Strategies]

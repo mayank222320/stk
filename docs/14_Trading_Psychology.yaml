@@ -1,0 +1,267 @@
+module:
+  id: 10
+  name: Trading Psychology
+  description: >
+    Trading psychology studies how emotions,
+    cognitive biases and decision making
+    influence trading performance.
+# CORE PRINCIPLE
+psychology:
+  objective:
+    Make rational decisions
+    independent of emotions.
+  philosophy:
+    Successful traders control themselves,
+    not the market.
+# MARKET EMOTIONS
+market_emotions:
+  optimism
+  excitement
+  euphoria
+  anxiety
+  denial
+  fear
+  panic
+  capitulation
+  despair
+  hope
+  recovery
+cycle:
+  optimism
+      ↓
+  excitement
+      ↓
+  euphoria
+      ↓
+  denial
+      ↓
+  fear
+      ↓
+  panic
+      ↓
+  capitulation
+      ↓
+  recovery
+# COMMON EMOTIONS
+fear:
+  effects:
+    Exit winners too early.
+    Skip good trades.
+    Tighten stop unnecessarily.
+greed:
+  effects:
+    Oversized positions.
+    Ignore exits.
+    Chase price.
+hope:
+  effects:
+    Hold losing trades.
+    Ignore invalidation.
+regret:
+  effects:
+    Chase missed moves.
+revenge:
+  effects:
+    Immediate re-entry.
+    Overtrading.
+confidence:
+  positive:
+    Follow plan.
+overconfidence:
+  negative:
+    Excessive risk.
+# DISCIPLINE
+discipline:
+  definition:
+    Follow predefined rules
+    regardless of emotion.
+requirements:
+  Entry Rules
+  Exit Rules
+  Position Size
+  Risk Rules
+# PATIENCE
+patience:
+  objective:
+    Wait for high-probability setups.
+avoid:
+  Trading because market is open.
+# CONSISTENCY
+consistency:
+  objective:
+    Repeat correct process,
+    not seek perfect outcomes.
+measurement:
+  Rule adherence
+  Risk control
+  Execution quality
+# COGNITIVE BIASES
+biases:
+  confirmation_bias:
+    definition:
+      Seeking only information
+      supporting existing belief.
+  anchoring:
+    definition:
+      Fixating on previous prices.
+  recency_bias:
+    definition:
+      Expecting recent events
+      to continue indefinitely.
+  hindsight_bias:
+    definition:
+      Believing past outcomes
+      were obvious.
+  loss_aversion:
+    definition:
+      Feeling losses more strongly
+      than equivalent gains.
+  gambler_fallacy:
+    definition:
+      Expecting probability to
+      reverse after a sequence.
+# DECISION PROCESS
+decision_process:
+  step_1:
+    Analyze trend.
+  step_2:
+    Analyze structure.
+  step_3:
+    Check volume.
+  step_4:
+    Confirm setup.
+  step_5:
+    Calculate risk.
+  step_6:
+    Execute without hesitation.
+  step_7:
+    Accept outcome.
+# ACCEPTING LOSSES
+losses:
+  principle:
+    Losses are business expenses.
+avoid:
+  Personal attachment.
+response:
+  Review objectively.
+# WINNING TRADES
+winning_trades:
+  principles:
+    Follow exit rules.
+    Avoid greed.
+    Let trend continue.
+# LOSING TRADES
+losing_trades:
+  principles:
+    Respect stop loss.
+    Do not average down.
+    Review mistakes.
+# TRADING JOURNAL
+journal:
+  record:
+    Entry
+    Exit
+    Trend
+    Structure
+    Risk
+    Emotion
+    Mistakes
+objective:
+  Continuous improvement.
+# PRE-TRADE CHECKLIST
+pre_trade:
+  checklist:
+    Trend Confirmed
+    Structure Confirmed
+    Volume Confirmed
+    Stop Defined
+    Risk Acceptable
+    Emotion Neutral
+# POST-TRADE REVIEW
+post_trade:
+  questions:
+    Did I follow rules?
+    Was entry valid?
+    Was exit valid?
+    Did emotion interfere?
+    What can improve?
+# AI PSYCHOLOGY FILTER
+psychology_filter:
+  reject_if:
+    Revenge Trading
+    Fear Driven
+    FOMO
+    No Plan
+    Emotional Entry
+accept_if:
+    Rule Based
+    Planned
+    Risk Controlled
+# DECISION RULES
+rules:
+  - Follow process over prediction.
+  - Never chase price.
+  - Accept uncertainty.
+  - Never increase risk emotionally.
+  - Protect capital first.
+  - Review every trade.
+# AI INFERENCE
+inference:
+  - if:
+      FOMO
+      Chasing Price
+    then:
+      Reject Trade
+  - if:
+      Revenge Trading
+    then:
+      Reject Trade
+  - if:
+      Neutral Emotion
+      Confirmed Setup
+      Defined Risk
+    then:
+      Psychological Readiness:
+        High
+# KNOWLEDGE GRAPH
+graph:
+  Emotion
+      ↓
+  Decision
+      ↓
+  Execution
+      ↓
+  Risk
+      ↓
+  Outcome
+      ↓
+  Review
+      ↓
+  Improvement
+# COMMON ERRORS
+mistakes:
+  - Fear of pulling trigger.
+  - Taking profits too early.
+  - Holding losers too long.
+  - Revenge trading.
+  - Ignoring plan.
+  - Overconfidence.
+  - FOMO.
+  - Emotional position sizing.
+# GOLDEN PRINCIPLES
+golden_principles:
+  - The market does not know you exist.
+  - Process is more important than outcome.
+  - Every trade is independent.
+  - Consistency beats intensity.
+  - Discipline creates profitability.
+# SUMMARY
+summary:
+  principle:
+    Trading success depends more on
+    consistent execution than
+    predicting every market move.
+  objective:
+    Eliminate emotional decision making
+    through structured rules,
+    discipline and continuous review.

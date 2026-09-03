@@ -1,0 +1,259 @@
+module:
+  id: 09
+  name: Volume Analysis
+  description: >
+    Volume measures market participation and validates
+    price movement. Price indicates direction, while
+    volume indicates conviction.
+# OVERVIEW
+volume:
+  definition:
+    Number of shares/contracts exchanged
+    during a specified period.
+  objectives:
+    - Confirm Trend
+    - Detect Reversal
+    - Detect Institutional Activity
+    - Validate Breakouts
+    - Measure Participation
+# CORE PRINCIPLE
+principle:
+  Price determines direction.
+  Volume determines conviction.
+# MARKET PARTICIPATION
+participation:
+  increasing_volume:
+    Indicates growing market interest.
+  decreasing_volume:
+    Indicates declining participation.
+# PRICE + VOLUME MATRIX
+price_volume_relationship:
+  rising_price:
+    rising_volume:
+      interpretation:
+        Healthy Bullish Trend
+      confidence:
+        Very High
+    falling_volume:
+      interpretation:
+        Weak Rally
+      confidence:
+        Moderate
+  falling_price:
+    rising_volume:
+      interpretation:
+        Strong Selling
+      confidence:
+        High
+    falling_volume:
+      interpretation:
+        Weak Selling
+      confidence:
+        Moderate
+# VOLUME CONFIRMATION
+confirmation:
+  bullish:
+    Conditions:
+      Higher High
+      Higher Volume
+  bearish:
+    Conditions:
+      Lower Low
+      Higher Selling Volume
+# BREAKOUT VALIDATION
+breakout:
+  high_volume:
+    interpretation:
+      Genuine Breakout
+  average_volume:
+    interpretation:
+      Moderate Reliability
+  low_volume:
+    interpretation:
+      Possible False Breakout
+# PULLBACK ANALYSIS
+pullback:
+  healthy:
+    Lower Volume
+      +
+    Trend Intact
+  unhealthy:
+    High Selling Volume
+      +
+    Structural Weakness
+# VOLUME DIVERGENCE
+divergence:
+  bullish:
+    Price Falls
+        +
+    Selling Volume Declines
+  interpretation:
+    Selling pressure weakening.
+  bearish:
+    Price Rises
+        +
+    Buying Volume Declines
+  interpretation:
+    Buying pressure weakening.
+# CLIMAX
+buying_climax:
+  characteristics:
+    Extremely High Volume
+    Sharp Rally
+    Public Participation
+    Institutional Selling
+selling_climax:
+  characteristics:
+    Extremely High Volume
+    Panic Selling
+    Institutional Buying
+# ABSORPTION
+absorption:
+  definition:
+    Institutions absorb aggressive buying
+    or selling while price changes very little.
+  characteristics:
+    High Volume
+    Narrow Spread
+    Repeated Tests
+  implication:
+    Large hidden orders exist.
+# EXHAUSTION
+exhaustion:
+  definition:
+    Trend continues but participation declines.
+  characteristics:
+    Low Volume
+    Small Progress
+    Momentum Weakens
+# EFFORT VS RESULT
+effort_result:
+  effort:
+    Volume
+  result:
+    Price Movement
+  interpretations:
+    High Effort
+        +
+    High Result
+          →
+        Healthy Trend
+    High Effort
+        +
+    Small Result
+          →
+        Absorption
+    Low Effort
+        +
+    Large Result
+          →
+        Low Resistance
+# VOLUME DURING MARKET CYCLE
+market_cycle:
+  accumulation:
+    Selling decreases
+    Buying gradually increases
+  markup:
+    Rising Volume
+    Expanding Participation
+  distribution:
+    High Volume
+    Weak Progress
+  markdown:
+    Heavy Selling
+    Panic
+# VOLUME AT SUPPORT
+support:
+  rising_volume:
+    Bullish Confirmation
+  declining_volume:
+    Weak Demand
+# VOLUME AT RESISTANCE
+resistance:
+  increasing_volume:
+    Strong Supply
+  declining_volume:
+    Weak Selling
+# MULTI-TIMEFRAME VOLUME
+multi_timeframe:
+  higher_timeframe:
+    Highest Importance
+  lower_timeframe:
+    Used For Entries
+# VOLUME WARNINGS
+warnings:
+  - High Volume without price movement.
+  - Breakout on low volume.
+  - Consecutive declining volume.
+  - Extreme volume after long trend.
+# DECISION RULES
+decision_rules:
+  - Volume confirms price.
+  - Never trust low-volume breakout.
+  - High volume at support favors buyers.
+  - High volume at resistance favors sellers.
+  - Absorption indicates institutional activity.
+  - Climax often precedes reversal.
+# AI INFERENCE RULES
+inference:
+  - if:
+      Breakout
+      High Volume
+      Follow Through
+    then:
+      Confidence:
+        Very High
+  - if:
+      Breakout
+      Low Volume
+    then:
+      Confidence:
+        Weak
+  - if:
+      Selling Climax
+      High Volume
+      Strong Recovery
+    then:
+      Probability:
+        Accumulation
+  - if:
+      Buying Climax
+      High Volume
+      Weak Continuation
+    then:
+      Probability:
+        Distribution
+# KNOWLEDGE GRAPH
+graph:
+  Volume
+      ↓
+  Participation
+      ↓
+  Conviction
+      ↓
+  Confirmation
+      ↓
+  Trend
+      ↓
+  Entry
+      ↓
+  Risk
+      ↓
+  Exit
+# COMMON ERRORS
+mistakes:
+  - Ignoring volume.
+  - Trading low-volume breakout.
+  - Assuming every high-volume candle is bullish.
+  - Ignoring market context.
+  - Ignoring trend.
+# SUMMARY
+summary:
+  principle:
+    Price reveals direction.
+    Volume reveals commitment.
+  objective:
+    Use volume to confirm trend,
+    identify institutional participation,
+    validate breakouts,
+    and detect potential reversals.

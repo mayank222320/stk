@@ -1,0 +1,302 @@
+module:
+  id: 05
+  name: Candlestick Analysis
+  description: >
+    Candlesticks visualize the continuous battle between buyers
+    and sellers. Each candle represents market psychology,
+    liquidity interaction, and institutional participation.
+# CANDLE COMPONENTS
+candlestick:
+  represents:
+    One completed trading period.
+  components:
+    open:
+      First traded price.
+    high:
+      Highest traded price.
+    low:
+      Lowest traded price.
+    close:
+      Final traded price.
+body:
+  bullish:
+    Close > Open
+  bearish:
+    Close < Open
+shadows:
+  upper:
+    Highest rejection from buyers.
+  lower:
+    Lowest rejection from sellers.
+# PSYCHOLOGY
+psychology:
+  objective:
+    Every candle reveals temporary market control.
+  questions:
+    - Who controlled this candle?
+    - Who lost control?
+    - Was liquidity absorbed?
+    - Was demand increasing?
+    - Was supply increasing?
+# CANDLE STRENGTH
+strength:
+  strong_bullish:
+    characteristics:
+      - Large body
+      - Small wicks
+      - Strong close
+      - Increasing volume
+    interpretation:
+      Demand dominates.
+  strong_bearish:
+    characteristics:
+      - Large body
+      - Small wicks
+      - Weak close
+      - Increasing volume
+    interpretation:
+      Supply dominates.
+# DOJI
+doji:
+  definition:
+    Open approximately equals Close.
+  psychology:
+    Temporary equilibrium.
+  meaning:
+    Market uncertainty.
+  stronger_if:
+    - Appears after trend
+    - High volume
+    - Near support/resistance
+  confirmation:
+    Next candle required.
+# HAMMER
+hammer:
+  trend:
+    Downtrend
+  psychology:
+    Sellers initially controlled.
+    Buyers completely recovered.
+  institutional_view:
+    Demand absorbed supply.
+  requirements:
+    - Long lower shadow
+    - Small body
+    - Close near high
+  confirmation:
+    Bullish close afterwards.
+  failure:
+    Break below hammer low.
+# HANGING MAN
+hanging_man:
+  trend:
+    Uptrend
+  psychology:
+    Sellers appeared.
+    Buyers recovered.
+    Weakness begins.
+  confirmation:
+    Bearish candle next.
+# INVERTED HAMMER
+inverted_hammer:
+  trend:
+    Downtrend
+  psychology:
+    Buyers attempted breakout.
+    Sellers rejected.
+    Possible reversal.
+  confirmation:
+    Bullish continuation.
+# SHOOTING STAR
+shooting_star:
+  trend:
+    Uptrend
+  psychology:
+    Buyers failed to hold highs.
+  interpretation:
+    Distribution possible.
+  confirmation:
+    Lower close.
+# BULLISH ENGULFING
+bullish_engulfing:
+  psychology:
+    Buyers overwhelm previous sellers.
+  conditions:
+    Bullish body completely engulfs
+    previous bearish body.
+  institutional_signal:
+    Aggressive buying.
+  stronger_if:
+    - High volume
+    - Support
+    - Downtrend
+# BEARISH ENGULFING
+bearish_engulfing:
+  psychology:
+    Sellers overwhelm buyers.
+  stronger_if:
+    - Resistance
+    - High volume
+    - Uptrend
+# PIERCING PATTERN
+piercing:
+  psychology:
+    Buyers recover significant losses.
+  implication:
+    Early bullish reversal.
+# DARK CLOUD COVER
+dark_cloud_cover:
+  psychology:
+    Sellers regain control.
+# HARAMI
+bullish_harami:
+  psychology:
+    Selling momentum weakens.
+bearish_harami:
+  psychology:
+    Buying momentum weakens.
+# MORNING STAR
+morning_star:
+  trend:
+    Downtrend
+  psychology:
+    Panic
+      ↓
+    Balance
+      ↓
+    Strong demand
+  implication:
+    Bullish reversal.
+# EVENING STAR
+evening_star:
+  trend:
+    Uptrend
+  psychology:
+    Euphoria
+      ↓
+    Balance
+      ↓
+    Selling pressure
+  implication:
+    Bearish reversal.
+# CANDLE + VOLUME
+volume_confirmation:
+  bullish:
+    Large Bullish Candle
+      +
+    High Volume
+      →
+    Strong Demand
+  bearish:
+    Large Bearish Candle
+      +
+    High Volume
+      →
+    Strong Supply
+# CONTEXT
+context:
+  highest_priority:
+    Market Trend
+  second:
+    Support Resistance
+  third:
+    Volume
+  fourth:
+    Pattern
+rule:
+  Never trade candlestick patterns
+  without market context.
+# WYCKOFF RELATIONSHIPS
+wyckoff:
+  hammer:
+    Often appears near
+      Selling Climax
+      Spring
+      Last Point of Support
+  shooting_star:
+    Often appears near
+      Buying Climax
+      UT
+      UTAD
+# RELIABILITY
+reliability:
+  strongest:
+    Pattern
+      +
+    Trend
+      +
+    Support/Resistance
+      +
+    Volume
+      +
+    Market Structure
+  weakest:
+    Pattern alone.
+# DECISION RULES
+decision_rules:
+  - Never trade one candle.
+  - Wait for confirmation.
+  - Trend has priority.
+  - Volume confirms.
+  - Structure confirms.
+  - Institutions matter more than shapes.
+# AI REASONING
+inference:
+  - if:
+      Hammer
+      Support
+      High Volume
+      Downtrend
+    then:
+      Bullish Probability:
+        Very High
+  - if:
+      Shooting Star
+      Resistance
+      High Volume
+      Uptrend
+    then:
+      Bearish Probability:
+        Very High
+  - if:
+      Doji
+      No Confirmation
+    then:
+      Market Bias:
+        Neutral
+# KNOWLEDGE GRAPH
+graph:
+  Trend
+      ↓
+  Market Structure
+      ↓
+  Support Resistance
+      ↓
+  Candlestick Pattern
+      ↓
+  Volume
+      ↓
+  Confirmation
+      ↓
+  Entry
+      ↓
+  Stop
+      ↓
+  Target
+# COMMON MISTAKES
+mistakes:
+  - Trading every Hammer.
+  - Ignoring volume.
+  - Ignoring trend.
+  - Ignoring structure.
+  - Ignoring institutional behavior.
+  - Treating all patterns equally.
+# SUMMARY
+summary:
+  principle:
+    Candlesticks represent psychology,
+    not guaranteed direction.
+  objective:
+    Combine candlesticks with trend,
+    structure, volume and institutional
+    behavior before making trading decisions.

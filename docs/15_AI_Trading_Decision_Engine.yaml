@@ -1,0 +1,61 @@
+module: 15_AI_Trading_Decision_Engine
+description: Complete reasoning workflow for the AI to analyze markets, evaluate evidence, assign probabilities, reject weak trades, and generate structured decisions.
+philosophy:
+  objective: Think like a professional trader, not like an indicator.
+  principles:
+    - Price is primary. Context > signals.
+    - Confluence increases probability.
+    - Every decision must have evidence.
+    - No single indicator determines a trade.
+analysis_order:
+  1: Higher Timeframe Trend
+  2: Market Structure (HH/HL/LH/LL/BOS/CHOCH)
+  3: Dow Theory Validation
+  4: Wyckoff Phase (Accumulation/Markup/Distribution/Markdown + Spring/SOS/LPS/UT/UTAD/SOW)
+  5: Support & Resistance + Demand/Supply Zones
+  6: Liquidity (Equal Highs/Lows, Stop Clusters, Liquidity Sweeps)
+  7: Volume (Participation, Confirmation, Absorption, Climax, Divergence)
+  8: Candlestick (Reversal/Continuation/Rejection/Momentum — confirmation required)
+  9: Chart Patterns (Continuation/Reversal/Compression/Expansion — validate with volume)
+  10: Indicators (EMA, RSI, MACD, ADX, ATR — never override price action)
+  11: Risk Management
+  12: Final Decision
+trade_quality_score:
+  Trend: 25
+  Structure: 20
+  Wyckoff: 15
+  Volume: 15
+  Support_Resistance: 10
+  Candlestick: 5
+  Indicators: 5
+  Risk: 5
+  max: 100
+quality_thresholds: {"90-100": Excellent, "75-89": High Probability, "60-74": Moderate, "<60": Avoid}
+entry_required: [Trend Alignment, Structure Confirmation, Volume Confirmation, Defined Stop Loss, "Risk:Reward >= 2"]
+entry_avoid: [Weak Trend, Low Volume, Emotional Decision]
+exit_conditions: [Stop Loss, Profit Target, Structure Break, Trend Reversal, Time Exit]
+trade_types: [Trend Following, Breakout, Pullback, Range, Reversal]
+confidence:
+  increase_if: [Trend Agreement, BOS, Strong Volume, Wyckoff Confirmation, Demand/Supply Alignment]
+  decrease_if: [Mixed Signals, Low Volume, Opposing Trend, Weak Structure]
+reject_trade_if:
+  - No Trend / No Structure / No Stop Loss
+  - RR < 2 / Conflicting Signals / Major News Risk / Emotional Bias
+output_fields: [Trend, Market Structure, Wyckoff Phase, Support, Resistance, Volume, Pattern, Indicators, Entry, Stop, Target, Risk:Reward, Confidence, Decision, Reasoning]
+decision_matrix:
+  Buy:  [Trend Bullish, Structure Bullish, Volume Bullish, Risk Acceptable]
+  Sell: [Trend Bearish, Structure Bearish, Volume Bearish, Risk Acceptable]
+  Hold: Mixed Evidence
+  Wait: Low Probability
+inference_examples:
+  - {if: [HH, HL, BOS, Spring, High Volume, EMA Alignment, "RSI>50", "RR>3"], then: {decision: Buy, confidence: Very High}}
+  - {if: [LH, LL, Distribution, UTAD, Selling Volume, EMA Bearish], then: {decision: Sell, confidence: Very High}}
+  - {if: [Sideways, Low Volume, Mixed Indicators], then: {decision: Wait, confidence: Low}}
+reasoning_sequence: Observe → Interpret → Confirm → Evaluate Risk → Decide → Monitor
+knowledge_priority: {1: Market Structure, 2: Trend, 3: Wyckoff, 4: Volume, 5: Support/Resistance, 6: Price Action, 7: Indicators, 8: Risk}
+golden_rules:
+  - Context before signal. Trend before entry. Structure before indicators.
+  - Volume confirms. Risk before reward.
+  - Never force a trade. Every trade requires evidence and must be explainable.
+summary: Reason hierarchically, combine evidence from every module, produce explainable probability-based risk-aware decisions instead of reacting to isolated signals.
+related_modules: [Dow_Theory, Wyckoff, Support_Resistance, Volume_Analysis, Candlestick_Patterns, Chart_Patterns, Indicators, Risk_Management]

@@ -1,0 +1,72 @@
+module: 12_Trading_Strategies
+definition: A structured set of rules defining market selection, entry, risk management, trade management, and exit.
+objective: Execute trades consistently using predefined evidence-based rules rather than emotions.
+principles:
+  - Trade with the dominant trend.
+  - Wait for confirmation before entry.
+  - Protect capital through risk management.
+  - Maintain positive risk-reward ratio (minimum 2:1).
+  - Follow the trading plan consistently.
+strategy_types:
+  trend_following:
+    objective: Trade in the direction of the primary trend.
+    conditions: [Bullish trend, Higher Highs + Higher Lows, Volume confirmation, EMA alignment]
+    entry: Pullback to support + bullish confirmation candle.
+    exit: Next resistance or trend reversal.
+  breakout:
+    objective: Capture momentum after price breaks key level.
+    conditions: [S/R break, High volume, Strong momentum]
+    entry: Confirmed breakout or successful retest.
+    exit: Measured move or next major resistance.
+  pullback:
+    objective: Enter after temporary corrections within a trend.
+    conditions: [Strong trend, Healthy pullback, Support zone, Bullish candle]
+  reversal:
+    objective: Identify probable trend reversals.
+    conditions: [Change of Character, Volume shift, Major reversal pattern, Divergence]
+  range_trading:
+    objective: Trade between support and resistance.
+    conditions: [Sideways market, Stable range, Low trend strength]
+  scalping:   {objective: Capture small intraday moves, characteristics: [Short holding, High frequency, Strict risk management]}
+  swing:      {objective: Capture medium-term swings, holding: Days to Weeks}
+  positional: {objective: Follow long-term trends, holding: Weeks to Months}
+entry_rules:
+  - Identify higher timeframe trend first.
+  - Market structure must support direction.
+  - Volume should confirm the setup.
+  - Risk-reward must be at least 2:1.
+  - Define stop-loss BEFORE entry.
+exit_rules:
+  take_profit:    Predefined target.
+  trailing_stop:  Follow trend while protecting profits.
+  structure_break: Exit if market structure becomes invalid.
+  time_exit:      Exit if setup no longer valid.
+trade_management:
+  stop_loss:    Move only according to predefined rules.
+  partial_exit: Allowed at key levels.
+  scale_in:     Only when trend confirms continuation.
+  scale_out:    Reduce exposure during uncertainty.
+risk_management:
+  risk_per_trade:       1–2% of capital maximum.
+  min_risk_reward:      2:1
+  max_open_risk:        Controlled across all open positions.
+strategy_selection:
+  trending_market:   [Trend Following, Pullback, Breakout]
+  range_market:      [Range Trading]
+  high_volatility:   [Breakout, Momentum]
+  low_volatility:    [Wait, Compression Breakout]
+evaluation_metrics: [Win Rate, Profit Factor, Expectancy, Avg Risk-Reward, Max Drawdown, Sharpe Ratio]
+decision_rules:
+  - Never trade without confirmation.
+  - Strategy must match current market conditions.
+  - Risk management before profit targets.
+  - Avoid trading in uncertain conditions.
+  - Never switch strategies emotionally.
+common_mistakes:
+  - Using trend strategies in ranging markets.
+  - Chasing breakouts without volume.
+  - Ignoring higher timeframe direction.
+  - Entering before confirmation.
+  - Poor risk management.
+summary: Successful strategies combine market context, trend, structure, volume, confirmation, and disciplined execution. No single strategy is universally effective.
+related_modules: [Market_Basics, Dow_Theory, Wyckoff, Market_Makers, Candlestick_Patterns, Chart_Patterns, Support_Resistance, Trend_Analysis, Volume_Analysis, Indicators, Elliott_Wave, Risk_Management, Trading_Psychology]
